@@ -6,7 +6,7 @@ namespace elkngwoehgnwoirehneoirh_oeqrh
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IdeaController ideaController = new IdeaController();
         }
     }
 }
