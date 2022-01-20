@@ -14,21 +14,21 @@ namespace elkngwoehgnwoirehneoirh_oeqrh
         public Display()
         {
             Ideas = new List<IdeaModel>();
-            Console.WriteLine("Dobre doshli v nashiq app. Kakwo iskate da pravite");
+            Console.WriteLine("Добре дошли в нашето приложение. Какво искате да правите");
         }
         public void Input()
         {
-            Console.WriteLine("1 - Napravete nov zapis.");
-            Console.WriteLine("2 - pokajete vsichki zapisi.");
-            Console.WriteLine("8 - izchisti konzolata.");
-            Console.WriteLine("9 - Exit.");
+            Console.WriteLine("1 - Направате нов запис.");
+            Console.WriteLine("2 - Покажете всички записи.");
+            Console.WriteLine("8 - Изчисти конзолата.");
+            Console.WriteLine("9 - Изхос.");
             try
             {
                 Choice = int.Parse(Console.ReadLine());
             }
             catch (Exception ex)
             {
-                if (ex.Message == "Input string was not in a correct format.")
+                if (ex.Message == "Input string не беше правилен формат.")
                     Choice = 0;
                 else
                     throw;
@@ -37,21 +37,21 @@ namespace elkngwoehgnwoirehneoirh_oeqrh
         }
         public void DefaultChoice()
         {
-            Console.WriteLine("Greshen izbor, Molq izberete na novo.");
+            Console.WriteLine("Гречен избор, Моля изберете на ново.");
         }
         public void NewIdeaName()
         {
-            Console.WriteLine("Molq vuvedete ime na ideqta");
+            Console.WriteLine("моля въведете име на идеята");
             IdeaName = Console.ReadLine();
         }
         public void NewIdeaValue()
         {
-            Console.WriteLine($"Molq vuvedete vashata ideq {IdeaName}");
+            Console.WriteLine($"Моля въведете вашата идеа {IdeaName}");
             IdeaValue = Console.ReadLine();
         }
         public void Successful()
         {
-            Console.WriteLine("Vie uspeshno dobavihte nov zapis");
+            Console.WriteLine("Вие успешно добавихте нов запис");
         }
         public void AddRecord(IdeaModel idea)
         {
@@ -65,8 +65,8 @@ namespace elkngwoehgnwoirehneoirh_oeqrh
         {
             for (int i = 0; i < Ideas.Count; i++)
             {
-                Console.WriteLine($"Ime na ideq: {Ideas[i].IdeaName}");
-                Console.WriteLine($"Stoinost na ideq: {Ideas[i].IdeaValue}");
+                Console.WriteLine($"Име на Идея: {Ideas[i].IdeaName}");
+                Console.WriteLine($"Стойност на идея: {Ideas[i].IdeaValue}");
                 Console.WriteLine("");
             }
         }

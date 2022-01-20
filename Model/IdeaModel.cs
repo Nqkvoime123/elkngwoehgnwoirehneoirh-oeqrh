@@ -12,7 +12,7 @@ namespace elkngwoehgnwoirehneoirh_oeqrh
             set
             {
                 if (value.Length > 15)
-                    throw new Exception("Imeto ne moje da e poveche ot 14 simvola");
+                    throw new Exception("Името не може да  е повече от 14 символа");
                 IdeaName = value;
             }
         }
@@ -22,7 +22,7 @@ namespace elkngwoehgnwoirehneoirh_oeqrh
             set
             {
                 if (value.Length < 9)
-                    throw new Exception("Stoinostta na ideqta trqbva da e nad 10 simvola");
+                    throw new Exception("Стойността на идеята трябва да е над 10 символа");
                 IdeaValue = value;
             }
         }
